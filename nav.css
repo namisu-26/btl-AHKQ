@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210912/pngtree-fresh-and-beautiful-blue-sky-and-white-clouds-photography-map-image_873375.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.icon {
+    position: absolute;
+    font-size: 2.6em;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: transparent(40, 179, 179);
+    height: 80px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.navbar a {
+    color: #000000;
+    margin: 0px 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #000000;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    top: 70%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #000000;
+}
+
+.content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+
+
+span {
+    background: #009688;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -5;
+    transition: .3s;
+}
+
+
